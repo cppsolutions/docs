@@ -28,7 +28,7 @@
   <meta property="og:title" content="Survivor Benefit" />
   <meta property="og:type" content="article" />
   <meta property="og:description" content="" />
-  <meta property="og:site_name" content="CPP Analyzer Help" /> 
+  <meta property="og:site_name" content="CPP Analyzer User's Manual" /> 
 
   <!-- Bootstrap core CSS -->
   <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
@@ -55,7 +55,19 @@
   <!-- Content style -->
   <link href="css/hnd.content.css" rel="stylesheet" />
 
-  
+  <style type="text/css">.md-nav-expanded>ul, header {
+    background-color: rgb(23, 74, 118);
+    color: white;
+}
+
+#tab-contents, #tab-index, #tab-search {
+    color: white;
+}
+
+.tab.active, #tab-contents:hover, #tab-index:hover, #tab-search:hover {
+    color: black;
+    background-color: white;
+}</style>
 
 
 
@@ -74,8 +86,8 @@
       <span class="sr-only">Toggle navigation</span>
       <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
     </button>
-    <h1>CPP Analyzer Help</h1>
-    
+    <h1>CPP Analyzer User's Manual</h1>
+    <a href="https://www.cvretirementplanning.com/"><img src="_logo.png" alt="logo" class="logo"/></a>
   </header>
 
   <nav class="md-nav-expanded">
@@ -95,20 +107,6 @@
             </a>
         </li>
       
-        <li role="presentation" class="tab">
-            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
-                <i class="glyphicon glyphicon-asterisk"></i>
-                Index
-            </a>
-        </li>
-      
-        <li role="presentation" class="tab">
-            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
-                <i class="glyphicon glyphicon-search"></i>
-                Search
-            </a>
-        </li>
-      
     </ul>  <!-- /Nav tabs -->
 
     <!-- Tab panes -->
@@ -117,43 +115,11 @@
       <div role="tabpanel" class="tab-pane active" id="contents">
         <div id="toc" class="tree-container unselectable"
             data-url="_toc.json"
-            data-openlvl="1"
+            data-openlvl="0"
         >
             
         </div>
       </div>  <!-- /contents-->
-      
-      <div role="tabpanel" class="tab-pane" id="index">
-        <div id="keywords" class="tree-container unselectable"
-            data-url="_keywords.json"
-            data-openlvl="1"
-        >
-            
-        </div>
-      </div>  <!-- /index-->
-      
-      <div role="tabpanel" class="tab-pane" id="search">
-        <div class="search-content">
-          <div class="search-input">
-            <form id="search-form">
-              <div class="form-group">
-                <div class="input-group">
-                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
-                  <span class="input-group-btn">
-                    <button class="btn btn-default" type="submit">
-                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                    </button>
-                  </span>
-                </div>
-              </div>
-            </form>
-          </div>  <!-- /search-input -->
-          <div class="search-result">
-            <div id="search-info"></div>
-            <div class="tree-container unselectable" id="search-tree"></div>
-          </div>  <!-- /search-result -->
-        </div>  <!-- /search-content -->
-      </div>  <!-- /search-->
       
     </div>  <!-- /Tab panes -->
 
@@ -164,18 +130,9 @@
     <article>
         <div id="topic-content" class="container-fluid" 
 		  data-hnd-id="SurvivorBenefit"
-		  data-hnd-context="19"
+		  data-hnd-context="660"
 		  data-hnd-title="Survivor Benefit"
 		>
-            
-                <div class="navigation">
-                    <ol class="breadcrumb">
-                        <li><a href="Configuringanewclient.html">Configuring a new client</a></li>
-                    </ol>
-                    <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Configuringanewclient.html" title="Configuring a new client" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="ClientScenarios.html" title="Client Scenarios" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="ClientReport.html" title="Client Report" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
-                    </div>
-                </div> 
             
 
             <a id="main-content"></a>
@@ -185,12 +142,66 @@
             <div class="main-content">
                 
 <p></p>
+<p class="rvps4"><span class="rvts6">The </span><span class="rvts11">Survivor benefit options</span><span class="rvts6">&nbsp;form walks the advisor through a set of questions pertaining to your clients current situation.</span></p>
+<p class="rvps4"><span class="rvts6"><br/></span></p>
+<p class="rvps4"><span class="rvts6">The questions allow the software to calculate if your client is eligible for the survivor benefit, and secondly, what</span></p>
+<p class="rvps4"><span class="rvts6">dollar amount can they expect to collect in the future based on when they decide to begin their CPP benefit. </span></p>
+<p class="rvps4"><span class="rvts6"><br/></span></p>
+<p class="rvps5" style="text-indent: -24px; padding-left: 24px; margin-left: 48px;"><span style="font-size: 12pt; font-family: 'Courier New', 'Courier', monospace; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">o</span><span class="rvts6">To </span><span class="rvts53">navigate</span><span class="rvts6">&nbsp;to the Survivor benefit form either use:</span></p>
+<p class="rvps20" style="text-indent: -24px; padding-left: 24px; margin-left: 96px;"><span style="font-size: 12pt; font-family: Symbola, 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">▪</span><span class="rvts6">&nbsp;the </span><a class="rvts17" href="RibbonTabs.html">Ribbon Tabs</a><span class="rvts6">&nbsp;&gt; Home Tab &gt; Click the "Survivor benefit" button. or</span></p>
+<p class="rvps20" style="text-indent: -24px; padding-left: 24px; margin-left: 96px;"><span style="font-size: 12pt; font-family: Symbola, 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">▪</span><span class="rvts6">the </span><a class="rvts17" href="Configurationpanel.html">Configuration panel</a><span class="rvts6">&nbsp;&gt; Click the "Survivor benefit" button.</span></p>
+<p class="rvps5" style="text-indent: -24px; padding-left: 24px; margin-left: 48px;"><span style="font-size: 12pt; font-family: 'Courier New', 'Courier', monospace; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">o</span><span class="rvts6">To </span><span class="rvts53">Exit</span><span class="rvts6">&nbsp;the form and SAVE any changes Click the </span><img width="20" height="20" alt="" style="padding : 1px;" src="lib/home20px.png"><span class="rvts6">&nbsp;button.</span></p>
+<p class="rvps4"><span class="rvts6"><br/></span></p>
+<hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><img width="1066" height="600" alt="" style="padding : 1px;" src="lib/Survivor Benefit Q1.png"></p>
+<h1 class="rvps14"><span class="rvts0"><span class="rvts21">Q1 &gt; </span></span><span class="rvts0"><span class="rvts21">Has your client's spouse contributed to CPP? (Yes or No)</span></span></h1>
+<p class="rvps4"><span class="rvts11">No</span><span class="rvts6">&nbsp;- &nbsp;Your client is </span><span class="rvts12">not</span><span class="rvts6">&nbsp;eligible for a survivor benefit.</span></p>
+<p class="rvps5" style="text-indent: -24px; padding-left: 24px; margin-left: 96px;"><span style="font-size: 12pt; font-family: Symbola, 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">▪</span><span class="rvts6">Click on the "Confirm" button, will indicate "Confirmed" and then the "Home" button to exit form</span></p>
+<p class="rvps5"><span class="rvts6"><br/></span></p>
+<p class="rvps4"><span class="rvts11">Yes</span><span class="rvts6">&nbsp;- Then your client </span><span class="rvts12">may be</span><span class="rvts6">&nbsp;eligible for a survivor benefit. </span></p>
+<p class="rvps5" style="text-indent: -24px; padding-left: 24px; margin-left: 96px;"><span style="font-size: 12pt; font-family: Symbola, 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">▪</span><span class="rvts6">Q2 is displayed</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps4"><img width="1066" height="600" alt="" style="padding : 1px;" src="lib/Survivor Benefit Q2.png"></p>
+<h1 class="rvps14"><span class="rvts0"><span class="rvts21">Q2 &gt; </span></span><span class="rvts0"><span class="rvts21">Is your client currently collecting a CPP survivor benefit? (Yes or No)</span></span></h1>
+<p class="rvps4"><span class="rvts11">Yes</span><span class="rvts6">&nbsp;- &nbsp;The assumption is that the client:</span></p>
+<p class="rvps5" style="text-indent: -24px; padding-left: 24px; margin-left: 96px;"><span style="font-size: 12pt; font-family: Symbola, 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">▪</span><span class="rvts6">Has </span><span class="rvts12">not</span><span class="rvts6">&nbsp;started their CPP benefit </span></p>
+<p class="rvps5" style="text-indent: -24px; padding-left: 24px; margin-left: 96px;"><span style="font-size: 12pt; font-family: Symbola, 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">▪</span><span class="rvts6">Client is </span><span class="rvts53">widowed</span><span class="rvts6">&nbsp;</span></p>
+<p class="rvps5" style="text-indent: -24px; padding-left: 24px; margin-left: 96px;"><span style="font-size: 12pt; font-family: Symbola, 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">▪</span><span class="rvts6">They are collecting an uncombined survivor benefit.</span></p>
+<p class="rvps5"><span class="rvts6"><br/></span></p>
+<p class="rvps20"><span class="rvts6">Information needed: &nbsp;Current amount of uncombined survivor benefit.</span></p>
+<p class="rvps19" style="text-indent: -24px; padding-left: 24px; margin-left: 96px;"><span style="font-size: 12pt; font-family: Symbola, 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">▪</span><span class="rvts6">Enter the amount in the input box</span></p>
+<p class="rvps5" style="text-indent: -24px; padding-left: 24px; margin-left: 96px;"><span style="font-size: 12pt; font-family: Symbola, 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">▪</span><span class="rvts6">Click on the "Confirm" button, will indicate "Confirmed" and then the "Home" button to exit form</span></p>
+<p class="rvps4"><span class="rvts6"><br/></span></p>
+<p class="rvps4"><span class="rvts11">No</span><span class="rvts6">&nbsp;- The assumption is that the client's spouse is still alive. Q3 is displayed</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps4"><img width="1066" height="600" alt="" style="padding : 1px;" src="lib/Survivor Benefit Q3 - Yes.png"></p>
+<h1 class="rvps14"><span class="rvts0"><span class="rvts21">Q3 &gt; </span></span><span class="rvts0"><span class="rvts21">Is your client's spouse currently collecting the CPP benefit? (Yes)</span></span></h1>
+<p class="rvps4"><span class="rvts11">Yes </span><span class="rvts6">- Information needed:</span></p>
+<p class="rvps5" style="text-indent: -24px; padding-left: 24px; margin-left: 96px;"><span style="font-size: 12pt; font-family: Symbola, 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">▪</span><span class="rvts6">Spouse's current CPP benefit</span></p>
+<p class="rvps5" style="text-indent: -24px; padding-left: 24px; margin-left: 96px;"><span style="font-size: 12pt; font-family: Symbola, 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">▪</span><span class="rvts6">Start age</span></p>
+<p class="rvps5" style="text-indent: -24px; padding-left: 24px; margin-left: 96px;"><span style="font-size: 12pt; font-family: Symbola, 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">▪</span><span class="rvts6">Start year</span></p>
+<p class="rvps5" style="text-indent: -24px; padding-left: 24px; margin-left: 96px;"><span style="font-size: 12pt; font-family: Symbola, 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">▪</span><span class="rvts6">Estimated your client's widowed age</span></p>
+<p class="rvps5"><span class="rvts6"><br/></span></p>
+<p class="rvps19" style="text-indent: -24px; padding-left: 24px; margin-left: 96px;"><span style="font-size: 12pt; font-family: Symbola, 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">▪</span><span class="rvts6">Enter the values in the input boxes</span></p>
+<p class="rvps5" style="text-indent: -24px; padding-left: 24px; margin-left: 96px;"><span style="font-size: 12pt; font-family: Symbola, 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">▪</span><span class="rvts6">Click on the "Confirm" button, will indicate "Confirmed" and then the "Home" button to exit form</span></p>
+<p class="rvps4"><span class="rvts6"><br/></span></p>
+<p class="rvps4"><span class="rvts6"><br/></span></p>
+<p class="rvps4"><img width="1066" height="600" alt="" style="padding : 1px;" src="lib/Survivor Benefit Q3 -No.png"></p>
+<h1 class="rvps14"><span class="rvts0"><span class="rvts21">Q3 &gt; </span></span><span class="rvts0"><span class="rvts21">Is your client's spouse currently collecting the CPP benefit? (No)</span></span></h1>
+<p class="rvps4"><span class="rvts11">No </span><span class="rvts6">-</span><span class="rvts11">&nbsp;</span><span class="rvts6">Information needed:</span></p>
+<p class="rvps5" style="text-indent: -24px; padding-left: 24px; margin-left: 96px;"><span style="font-size: 12pt; font-family: Symbola, 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">▪</span><span class="rvts6">Spouse's estimated Calculated Retirement Pension</span></p>
+<p class="rvps5" style="text-indent: -24px; padding-left: 24px; margin-left: 96px;"><span style="font-size: 12pt; font-family: Symbola, 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">▪</span><span class="rvts6">Estimated your client's widowed age</span></p>
+<p class="rvps5"><span class="rvts6"><br/></span></p>
+<p class="rvps19" style="text-indent: -24px; padding-left: 24px; margin-left: 96px;"><span style="font-size: 12pt; font-family: Symbola, 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">▪</span><span class="rvts6">Enter the values in the input boxes</span></p>
+<p class="rvps5" style="text-indent: -24px; padding-left: 24px; margin-left: 96px;"><span style="font-size: 12pt; font-family: Symbola, 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">▪</span><span class="rvts6">Click on the "Confirm" button, will indicate "Confirmed" and then the "Home" button to exit form</span></p>
+<p class="rvps5"><span class="rvts6"><br/></span></p>
 <p></p>
-<p class="rvps2" style="clear: both;"><span class="rvts6">Created with the Personal Edition of HelpNDoc: </span><a class="rvts7" href="https://www.helpndoc.com">Free PDF documentation generator</a></p>
+<p class="rvps6" style="clear: both;"><span class="rvts14">Created with the Personal Edition of HelpNDoc: </span><a class="rvts15" href="https://www.helpndoc.com">Free PDF documentation generator</a></p>
 
             </div>
             
-            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy;2020. CPP Solutions Inc. ,  All Rights Reserved.</div></div>
+            
         </div>  <!-- /#topic-content -->
     </article>
 

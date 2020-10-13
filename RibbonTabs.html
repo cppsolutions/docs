@@ -28,7 +28,7 @@
   <meta property="og:title" content="Ribbon Tabs" />
   <meta property="og:type" content="article" />
   <meta property="og:description" content="" />
-  <meta property="og:site_name" content="CPP Analyzer Help" /> 
+  <meta property="og:site_name" content="CPP Analyzer User's Manual" /> 
 
   <!-- Bootstrap core CSS -->
   <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
@@ -55,7 +55,19 @@
   <!-- Content style -->
   <link href="css/hnd.content.css" rel="stylesheet" />
 
-  
+  <style type="text/css">.md-nav-expanded>ul, header {
+    background-color: rgb(23, 74, 118);
+    color: white;
+}
+
+#tab-contents, #tab-index, #tab-search {
+    color: white;
+}
+
+.tab.active, #tab-contents:hover, #tab-index:hover, #tab-search:hover {
+    color: black;
+    background-color: white;
+}</style>
 
 
 
@@ -74,8 +86,8 @@
       <span class="sr-only">Toggle navigation</span>
       <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
     </button>
-    <h1>CPP Analyzer Help</h1>
-    
+    <h1>CPP Analyzer User's Manual</h1>
+    <a href="https://www.cvretirementplanning.com/"><img src="_logo.png" alt="logo" class="logo"/></a>
   </header>
 
   <nav class="md-nav-expanded">
@@ -95,20 +107,6 @@
             </a>
         </li>
       
-        <li role="presentation" class="tab">
-            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
-                <i class="glyphicon glyphicon-asterisk"></i>
-                Index
-            </a>
-        </li>
-      
-        <li role="presentation" class="tab">
-            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
-                <i class="glyphicon glyphicon-search"></i>
-                Search
-            </a>
-        </li>
-      
     </ul>  <!-- /Nav tabs -->
 
     <!-- Tab panes -->
@@ -117,43 +115,11 @@
       <div role="tabpanel" class="tab-pane active" id="contents">
         <div id="toc" class="tree-container unselectable"
             data-url="_toc.json"
-            data-openlvl="1"
+            data-openlvl="0"
         >
             
         </div>
       </div>  <!-- /contents-->
-      
-      <div role="tabpanel" class="tab-pane" id="index">
-        <div id="keywords" class="tree-container unselectable"
-            data-url="_keywords.json"
-            data-openlvl="1"
-        >
-            
-        </div>
-      </div>  <!-- /index-->
-      
-      <div role="tabpanel" class="tab-pane" id="search">
-        <div class="search-content">
-          <div class="search-input">
-            <form id="search-form">
-              <div class="form-group">
-                <div class="input-group">
-                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
-                  <span class="input-group-btn">
-                    <button class="btn btn-default" type="submit">
-                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                    </button>
-                  </span>
-                </div>
-              </div>
-            </form>
-          </div>  <!-- /search-input -->
-          <div class="search-result">
-            <div id="search-info"></div>
-            <div class="tree-container unselectable" id="search-tree"></div>
-          </div>  <!-- /search-result -->
-        </div>  <!-- /search-content -->
-      </div>  <!-- /search-->
       
     </div>  <!-- /Tab panes -->
 
@@ -164,18 +130,9 @@
     <article>
         <div id="topic-content" class="container-fluid" 
 		  data-hnd-id="RibbonTabs"
-		  data-hnd-context="27"
+		  data-hnd-context="410"
 		  data-hnd-title="Ribbon Tabs"
 		>
-            
-                <div class="navigation">
-                    <ol class="breadcrumb">
-                        <li><a href="Overviewoftheuserinterface.html">Overview of the user interface</a></li>
-                    </ol>
-                    <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Overviewoftheuserinterface.html" title="Overview of the user interface" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="FileMenu.html" title="File Menu" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Configurationpanel.html" title="Configuration panel" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
-                    </div>
-                </div> 
             
 
             <a id="main-content"></a>
@@ -185,44 +142,50 @@
             <div class="main-content">
                 
 <p></p>
-<h1 class="rvps5"><span class="rvts0"><span class="rvts21">Presentation</span></span></h1>
-<p class="rvps3"><span class="rvts18">CPP Analyzer's ribbon tabs are located at the top of the main window and provide all the features available within CPP Analyzer in a categorized fashion. The ribbon tabs parts are:</span></p>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: decimal;">
-<li value="1" style="margin-left: 0px" class="rvps7"><span class="rvts0"><span class="rvts18">The main tabs - They are always visible and are used for the most important actions</span></span></li>
-<li value="2" style="margin-left: 0px" class="rvps7"><span class="rvts0"><span class="rvts18">The tabs groups - When a tab is selected, it will display actions grouped by similar purpose</span></span></li>
-<li value="3" style="margin-left: 0px" class="rvps7"><span class="rvts0"><span class="rvts18">Contextual tabs - Those tabs are only shown when needed. For example, the "Picture Tools" tab is only visible when a picture is selected</span></span></li>
-</ol>
-<h1 class="rvps5"><span class="rvts0"><span class="rvts17">The Home tab</span></span></h1>
-<p class="rvps3"><span class="rvts18">This tab provides access to the basic actions:</span></p>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
-<li style="margin-left: 0px" class="rvps6"><span class="rvts18">Generate the documentation and change the project options </span></li>
-<li style="margin-left: 0px" class="rvps6"><span class="rvts18">Manage the </span><a class="rvts19" href="Managingthetableofcontents.htm">table of contents</a><span class="rvts18">&nbsp;and topic properties </span></li>
-<li style="margin-left: 0px" class="rvps6"><span class="rvts18">Manage the </span><a class="rvts19" href="Usingthekeywordseditor.htm">keywords hierarchy</a><span class="rvts18">&nbsp;and association </span></li>
-<li style="margin-left: 0px" class="rvps6"><span class="rvts18">Manage the </span><a class="rvts19" href="Usingthelibrary.htm">library</a><span class="rvts18">&nbsp;and import library items</span></li>
-</ul>
-<h1 class="rvps5"><span class="rvts0"><span class="rvts17">The View tab</span></span></h1>
-<p class="rvps3"><span class="rvts18">This tab gives access to actions needed to manage and format the topic editor's content:</span></p>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
-<li style="margin-left: 0px" class="rvps6"><span class="rvts18">Copy and paste text </span></li>
-<li style="margin-left: 0px" class="rvps6"><span class="rvts18">Manage font and paragraph properties </span></li>
-<li style="margin-left: 0px" class="rvps6"><span class="rvts18">Use and manage styles </span></li>
-<li style="margin-left: 0px" class="rvps6"><span class="rvts18">Find and replace content throughout the project</span></li>
-</ul>
-<h1 class="rvps5"><span class="rvts0"><span class="rvts17">The Help tab</span></span></h1>
-<p class="rvps3"><span class="rvts18">This tab provides access to inserting and importing actions:</span></p>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
-<li style="margin-left: 0px" class="rvps6"><span class="rvts18">Insert a picture, movie, document, HTML code, variable, snippets... </span></li>
-<li style="margin-left: 0px" class="rvps6"><span class="rvts18">Insert a table, symbol, horizontal line, page break, condition... </span></li>
-<li style="margin-left: 0px" class="rvps6"><span class="rvts18">Insert or Edit hyperlinks and anchors</span></li>
-</ul>
-<h1 class="rvps5"><span class="rvts0"><span class="rvts20"><br/></span></span></h1>
-<p class="rvps3"><span class="rvts18"><br/></span></p>
+<p class="rvps16"><span class="rvts6">CPP Analyzer's ribbon tabs are located at the top of the </span><span class="rvts11">main window</span><span class="rvts6">&nbsp;and provide all the features available within CPP Analyzer in a categorized fashion. </span></p>
+<p class="rvps16"><span class="rvts6">Each TAB will display actions grouped by similar purpose.</span></p>
+<p class="rvps16"><span class="rvts6">The Top ribbon is made of four tabs:</span></p>
+<p class="rvps15" style="text-indent: -24px; padding-left: 24px; margin-left: 48px;"><span style="font-size: 12pt; font-family: 'Courier New', 'Courier', monospace; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">o</span><a class="rvts47" href="FileMenu.html">File</a></p>
+<p class="rvps15" style="text-indent: -24px; padding-left: 24px; margin-left: 48px;"><span style="font-size: 12pt; font-family: 'Courier New', 'Courier', monospace; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">o</span><a class="rvts47" href="RibbonTabs.html#Home">Home</a></p>
+<p class="rvps15" style="text-indent: -24px; padding-left: 24px; margin-left: 48px;"><span style="font-size: 12pt; font-family: 'Courier New', 'Courier', monospace; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">o</span><a class="rvts47" href="RibbonTabs.html#View">View</a></p>
+<p class="rvps15" style="text-indent: -24px; padding-left: 24px; margin-left: 48px;"><span style="font-size: 12pt; font-family: 'Courier New', 'Courier', monospace; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">o</span><a class="rvts47" href="RibbonTabs.html#Help">Help</a></p>
+<h1 class="rvps14"><a name="Home"></a><span class="rvts0"><span class="rvts21">Home tab</span></span></h1>
+<h1 class="rvps14"><img width="1160" height="110" alt="" style="padding : 1px; background-color : #bfbfbf;" src="lib/Ribbon Tabs - 2020-07-08_14-17-41.png"></h1>
+<p class="rvps12"><span class="rvts6"><br/></span></p>
+<p class="rvps16"><span class="rvts6">The "Home" tab provides access to the 7 steps of client configuration:</span></p>
+<p class="rvps17" style="text-indent: -24px; padding-left: 24px; margin-left: 24px;"><span style="font-size: 12pt; font-family: Symbola, 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">•</span><span class="rvts11">Step 1</span><span class="rvts6">&nbsp;- Client details - Rates</span></p>
+<p class="rvps17" style="text-indent: -24px; padding-left: 24px; margin-left: 24px;"><span style="font-size: 12pt; font-family: Symbola, 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">•</span><span class="rvts11">Step 2</span><span class="rvts6">&nbsp;- CPP disability</span></p>
+<p class="rvps17" style="text-indent: -24px; padding-left: 24px; margin-left: 24px;"><span style="font-size: 12pt; font-family: Symbola, 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">•</span><span class="rvts11">Step 3</span><span class="rvts6">&nbsp;- Child rearing</span></p>
+<p class="rvps17" style="text-indent: -24px; padding-left: 24px; margin-left: 24px;"><span style="font-size: 12pt; font-family: Symbola, 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">•</span><span class="rvts11">Step 4</span><span class="rvts6">&nbsp;- Statement of contributions</span></p>
+<p class="rvps17" style="text-indent: -24px; padding-left: 24px; margin-left: 24px;"><span style="font-size: 12pt; font-family: Symbola, 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">•</span><span class="rvts11">Step 5</span><span class="rvts6">&nbsp;- Client scenarios </span></p>
+<p class="rvps17" style="text-indent: -24px; padding-left: 24px; margin-left: 24px;"><span style="font-size: 12pt; font-family: Symbola, 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">•</span><span class="rvts11">Step 6</span><span class="rvts6">&nbsp;- Survivor benefit</span></p>
+<p class="rvps17" style="text-indent: -24px; padding-left: 24px; margin-left: 24px;"><span style="font-size: 12pt; font-family: Symbola, 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">•</span><span class="rvts11">Step 7</span><span class="rvts6">&nbsp;- Client report</span></p>
+<p class="rvps15"><span class="rvts6"><br/></span></p>
+<h1 class="rvps14"><a name="View"></a><span class="rvts0"><span class="rvts21">View tab</span></span></h1>
+<p class="rvps4"><span class="rvts6"><br/></span></p>
+<p class="rvps16"><img width="1160" height="110" alt="" style="padding : 1px; background-color : #bfbfbf;" src="lib/Ribbon View - 2020-07-08_15-38-33.png"></p>
+<h1 class="rvps9"><span class="rvts0"><span class="rvts21"><br/></span></span></h1>
+<p class="rvps16"><span class="rvts6">The "View" tab gives access to:</span></p>
+<p class="rvps17" style="text-indent: -24px; padding-left: 24px; margin-left: 24px;"><span style="font-size: 12pt; font-family: Symbola, 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">•</span><span class="rvts6">View Dashboard. </span></p>
+<p class="rvps17" style="text-indent: -24px; padding-left: 24px; margin-left: 24px;"><span style="font-size: 12pt; font-family: Symbola, 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">•</span><span class="rvts6">View PRB analysis </span></p>
+<p class="rvps17" style="text-indent: -24px; padding-left: 24px; margin-left: 24px;"><span style="font-size: 12pt; font-family: Symbola, 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">•</span><span class="rvts6">View Detailed Calculation for scenario A and B </span></p>
+<p class="rvps17" style="text-indent: -24px; padding-left: 24px; margin-left: 24px;"><span style="font-size: 12pt; font-family: Symbola, 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">•</span><span class="rvts6">View archived client reports</span></p>
+<h1 class="rvps14"><a name="Help"></a><span class="rvts0"><span class="rvts21">Help tab</span></span></h1>
+<p class="rvps4"><span class="rvts6"><br/></span></p>
+<p class="rvps16"><img width="1159" height="110" alt="" style="padding : 1px; background-color : #bfbfbf;" src="lib/Ribbon Help - 2020-07-08_15-39-37.png"></p>
+<h1 class="rvps9"><span class="rvts0"><span class="rvts21"><br/></span></span></h1>
+<p class="rvps16"><span class="rvts6">The "Help" tab provides access to :</span></p>
+<p class="rvps17" style="text-indent: -24px; padding-left: 24px; margin-left: 24px;"><span style="font-size: 12pt; font-family: Symbola, 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">•</span><span class="rvts6">Printable User's Guide </span></p>
+<p class="rvps17" style="text-indent: -24px; padding-left: 24px; margin-left: 24px;"><span style="font-size: 12pt; font-family: Symbola, 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">•</span><span class="rvts6">Online help</span></p>
+<p class="rvps17" style="text-indent: -24px; padding-left: 24px; margin-left: 24px;"><span style="font-size: 12pt; font-family: Symbola, 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">•</span><span class="rvts6">About CPP Analyzer and Contact information</span></p>
+<h1 class="rvps9"><span class="rvts0"><span class="rvts46"><br/></span></span></h1>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
 <p></p>
-<p class="rvps2" style="clear: both;"><span class="rvts6">Created with the Personal Edition of HelpNDoc: </span><a class="rvts7" href="https://www.helpndoc.com/feature-tour/create-ebooks-for-amazon-kindle">Free Kindle producer</a></p>
+<p class="rvps6" style="clear: both;"><span class="rvts14">Created with the Personal Edition of HelpNDoc: </span><a class="rvts15" href="https://www.helpndoc.com/feature-tour/create-ebooks-for-amazon-kindle">Free Kindle producer</a></p>
 
             </div>
             
-            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy;2020. CPP Solutions Inc. ,  All Rights Reserved.</div></div>
+            
         </div>  <!-- /#topic-content -->
     </article>
 

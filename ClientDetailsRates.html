@@ -13,7 +13,7 @@
 
   <title>Client Details/Rates</title>
   <meta name="description" content="" /> 
-  <meta name="keywords" content="">
+  <meta name="keywords" content="YMPE">
 
 
 
@@ -28,7 +28,7 @@
   <meta property="og:title" content="Client Details/Rates" />
   <meta property="og:type" content="article" />
   <meta property="og:description" content="" />
-  <meta property="og:site_name" content="CPP Analyzer Help" /> 
+  <meta property="og:site_name" content="CPP Analyzer User's Manual" /> 
 
   <!-- Bootstrap core CSS -->
   <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
@@ -55,7 +55,19 @@
   <!-- Content style -->
   <link href="css/hnd.content.css" rel="stylesheet" />
 
-  
+  <style type="text/css">.md-nav-expanded>ul, header {
+    background-color: rgb(23, 74, 118);
+    color: white;
+}
+
+#tab-contents, #tab-index, #tab-search {
+    color: white;
+}
+
+.tab.active, #tab-contents:hover, #tab-index:hover, #tab-search:hover {
+    color: black;
+    background-color: white;
+}</style>
 
 
 
@@ -74,8 +86,8 @@
       <span class="sr-only">Toggle navigation</span>
       <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
     </button>
-    <h1>CPP Analyzer Help</h1>
-    
+    <h1>CPP Analyzer User's Manual</h1>
+    <a href="https://www.cvretirementplanning.com/"><img src="_logo.png" alt="logo" class="logo"/></a>
   </header>
 
   <nav class="md-nav-expanded">
@@ -95,20 +107,6 @@
             </a>
         </li>
       
-        <li role="presentation" class="tab">
-            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
-                <i class="glyphicon glyphicon-asterisk"></i>
-                Index
-            </a>
-        </li>
-      
-        <li role="presentation" class="tab">
-            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
-                <i class="glyphicon glyphicon-search"></i>
-                Search
-            </a>
-        </li>
-      
     </ul>  <!-- /Nav tabs -->
 
     <!-- Tab panes -->
@@ -117,43 +115,11 @@
       <div role="tabpanel" class="tab-pane active" id="contents">
         <div id="toc" class="tree-container unselectable"
             data-url="_toc.json"
-            data-openlvl="1"
+            data-openlvl="0"
         >
             
         </div>
       </div>  <!-- /contents-->
-      
-      <div role="tabpanel" class="tab-pane" id="index">
-        <div id="keywords" class="tree-container unselectable"
-            data-url="_keywords.json"
-            data-openlvl="1"
-        >
-            
-        </div>
-      </div>  <!-- /index-->
-      
-      <div role="tabpanel" class="tab-pane" id="search">
-        <div class="search-content">
-          <div class="search-input">
-            <form id="search-form">
-              <div class="form-group">
-                <div class="input-group">
-                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
-                  <span class="input-group-btn">
-                    <button class="btn btn-default" type="submit">
-                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                    </button>
-                  </span>
-                </div>
-              </div>
-            </form>
-          </div>  <!-- /search-input -->
-          <div class="search-result">
-            <div id="search-info"></div>
-            <div class="tree-container unselectable" id="search-tree"></div>
-          </div>  <!-- /search-result -->
-        </div>  <!-- /search-content -->
-      </div>  <!-- /search-->
       
     </div>  <!-- /Tab panes -->
 
@@ -164,18 +130,9 @@
     <article>
         <div id="topic-content" class="container-fluid" 
 		  data-hnd-id="ClientDetailsRates"
-		  data-hnd-context="14"
+		  data-hnd-context="610"
 		  data-hnd-title="Client Details/Rates"
 		>
-            
-                <div class="navigation">
-                    <ol class="breadcrumb">
-                        <li><a href="Configuringanewclient.html">Configuring a new client</a></li>
-                    </ol>
-                    <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Configuringanewclient.html" title="Configuring a new client" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="ExistingClient.html" title="Existing Client" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="CPPDisability.html" title="CPP Disability" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
-                    </div>
-                </div> 
             
 
             <a id="main-content"></a>
@@ -185,12 +142,51 @@
             <div class="main-content">
                 
 <p></p>
+<p class="rvps5" style="text-indent: -24px; padding-left: 24px; margin-left: 48px;"><span style="font-size: 12pt; font-family: 'Courier New', 'Courier', monospace; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">o</span><span class="rvts6">To </span><span class="rvts53">navigate</span><span class="rvts6">&nbsp;to the Client details/Rates form either use:</span></p>
+<p class="rvps20" style="text-indent: -24px; padding-left: 24px; margin-left: 96px;"><span style="font-size: 12pt; font-family: Symbola, 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">▪</span><span class="rvts6">&nbsp;the </span><a class="rvts17" href="RibbonTabs.html">Ribbon Tabs</a><span class="rvts6">&nbsp;&gt; Home Tab &gt; Click the "Client details/Rates" button. or</span></p>
+<p class="rvps20" style="text-indent: -24px; padding-left: 24px; margin-left: 96px;"><span style="font-size: 12pt; font-family: Symbola, 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">▪</span><span class="rvts6">the </span><a class="rvts17" href="Configurationpanel.html">Configuration panel</a><span class="rvts6">&nbsp;&gt; Click the "Client details/Rates" button.</span></p>
+<p class="rvps20"><span class="rvts6"><br/></span></p>
+<p class="rvps21" style="text-indent: -24px; padding-left: 24px; margin-left: 48px;"><span style="font-size: 12pt; font-family: 'Courier New', 'Courier', monospace; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">o</span><span class="rvts6">Either choose Yes/No or move slider to fill in form questions.</span></p>
+<p class="rvps5" style="text-indent: -24px; padding-left: 24px; margin-left: 48px;"><span style="font-size: 12pt; font-family: 'Courier New', 'Courier', monospace; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">o</span><span class="rvts6">To </span><span class="rvts53">Exit</span><span class="rvts6">&nbsp;the form and SAVE any changes Click the </span><img width="20" height="20" alt="" style="padding : 1px;" src="lib/home20px.png"><span class="rvts6">&nbsp;button.</span></p>
+<p class="rvps4"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><img width="1066" height="600" alt="" style="padding : 1px; background-color : #bfbfbf;" src="lib/Client Details - 2020-07-09_13-44-12.png"></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts52">Each Client profile is saved with its own set of Client details and Rates, which include:</span></p>
+<p class="rvps2"><span class="rvts35"><br/></span></p>
+<p class="rvps2"><span class="rvts35">Client Details</span><span class="rvts6">:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps12" style="text-indent: -24px; padding-left: 24px; margin-left: 0px;"><span style="font-size: 12pt; font-family: Symbola, 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">•</span><span class="rvts6">Is client current self-employed?</span></p>
+<p class="rvps12" style="text-indent: -24px; padding-left: 24px; margin-left: 0px;"><span style="font-size: 12pt; font-family: Symbola, 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">•</span><span class="rvts6">Is client currently collecting CPP disability?</span></p>
+<p class="rvps12" style="text-indent: -24px; padding-left: 24px; margin-left: 0px;"><span style="font-size: 12pt; font-family: Symbola, 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">•</span><span class="rvts6">How long has the client resided in </span><span class="rvts53">Canada</span><span class="rvts6">&nbsp;after the age of 18: used for Old Age Security calculations</span></p>
+<p class="rvps12" style="text-indent: -24px; padding-left: 24px; margin-left: 0px;"><span style="font-size: 12pt; font-family: Symbola, 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">•</span><span class="rvts6">Projected life expectancy (longevity)? </span></p>
+<hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
+<p class="rvps2"><span class="rvts35">Rates</span><span class="rvts6">:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The following rates are set by the advisor based on future expectations.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps12" style="text-indent: -24px; padding-left: 24px; margin-left: 0px;"><span style="font-size: 12pt; font-family: Symbola, 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">•</span><span class="rvts6">Average </span><span class="rvts11">*YMPE</span><span class="rvts6">&nbsp;inflation rate (wage inflation)</span></p>
+<p class="rvps12" style="text-indent: -24px; padding-left: 24px; margin-left: 0px;"><span style="font-size: 12pt; font-family: Symbola, 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">•</span><span class="rvts6">Average CPP benefit inflation rate</span></p>
+<p class="rvps12" style="text-indent: -24px; padding-left: 24px; margin-left: 0px;"><span style="font-size: 12pt; font-family: Symbola, 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif; color: #000000; display: inline-block; text-indent: 0px; min-width: 24px;">•</span><span class="rvts6">Discount rate</span></p>
+<p class="rvps12"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts11">*YMPE</span></p>
+<p class="rvps5"><span class="rvts6">Increases in the YMPE are calculated from a formula detailed in Section 18 of the Canada Pension Plan Act. </span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">The pattern is defined as: </span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps5"><span class="rvts6">the </span><span class="rvts11">YMPE</span><span class="rvts6">&nbsp;For 2014 Is calculated by:</span></p>
+<p class="rvps5"><span class="rvts6"><br/></span></p>
+<p class="rvps5"><span class="rvts6">&nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">multiplying the current YMPE</span></p>
+<p class="rvps5"><span class="rvts6">&nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">by &nbsp;</span></p>
+<p class="rvps5"><span class="rvts6">(average monthly wage measure For the 12-month period ending June 30, 2012) / &nbsp;(average monthly wage measure for the 12-month period ending June 30, 2011)</span></p>
+<p class="rvps5"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps12"><span class="rvts6"><br/></span></p>
+<p class="rvps5"><span class="rvts6"><br/></span></p>
 <p></p>
-<p class="rvps2" style="clear: both;"><span class="rvts6">Created with the Personal Edition of HelpNDoc: </span><a class="rvts7" href="https://www.helpndoc.com/feature-tour/create-help-files-for-the-qt-help-framework">Create help files for the Qt Help Framework</a></p>
+<p class="rvps6" style="clear: both;"><span class="rvts14">Created with the Personal Edition of HelpNDoc: </span><a class="rvts15" href="https://www.helpndoc.com/feature-tour/create-help-files-for-the-qt-help-framework">Create help files for the Qt Help Framework</a></p>
 
             </div>
             
-            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy;2020. CPP Solutions Inc. ,  All Rights Reserved.</div></div>
+            
         </div>  <!-- /#topic-content -->
     </article>
 
